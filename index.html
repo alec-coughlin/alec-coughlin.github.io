@@ -4,6 +4,42 @@
     <title>Alec Coughlin</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: black;
+        background-image: url('https://media.giphy.com/media/3o7TKzX9FwXh9zF6Jm/giphy.gif');
+        background-repeat: repeat;
+        animation: flicker 3s infinite;
+      }
+      
+      @keyframes flicker {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      .rocket {
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: move-rocket 60s linear infinite;
+      }
+      
+      @keyframes move-rocket {
+        0% {
+          transform: translate(-100%, -100%);
+        }
+        100% {
+          transform: translate(100%, 100%);
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,5 +60,6 @@
         <p>Feel free to explore my projects and learn more about me.</p>
       </div>
     </main>
+    <img class="rocket" src="https://media.giphy.com/media/3o7TKzX9FwXh9zF6Jm/giphy.gif" alt="Rocketship">
   </body>
 </html>
