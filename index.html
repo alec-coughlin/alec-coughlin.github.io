@@ -28,15 +28,19 @@
         position: absolute;
         top: 50%;
         left: 0;
-        animation: move-rocket 60s linear infinite;
+        animation: move-rocket 10s linear infinite;
+        transform: rotate(90deg) scale(0.5);
       }
       
       @keyframes move-rocket {
         0% {
           transform: translateX(-100%);
         }
-        100% {
+        50% {
           transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
         }
       }
     </style>
