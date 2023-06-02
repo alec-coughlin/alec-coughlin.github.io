@@ -73,20 +73,20 @@ p {
 
 .rocket {
   position: fixed;
-  left: -200px; /* move rocket offscreen to the left initially */
+  left: -50%; /* move rocket offscreen to the left initially */
   bottom: 20px; /* adjust this as needed */
   height: 100px;
-  animation: moveRocket 5s linear infinite;
+  animation: moveRocket 20s linear infinite;
   /* removed the transform property from here */
 }
 
 @keyframes moveRocket {
   0% {
     /* added the rotation here */
-    transform: rotate(90deg) translateX(0);
+    transform: translateX(0);
   }
   100% {
     /* added the rotation here and increased translateX to 120vw */
-    transform: rotate(90deg) translateX(120vw);
+    transform: translateX(200vw);
   }
 }
