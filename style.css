@@ -77,14 +77,16 @@ p {
   bottom: 20px; /* adjust this as needed */
   height: 100px;
   animation: moveRocket 5s linear infinite;
-  transform: rotate(90deg); /* adjust rotation as needed */
+  /* removed the transform property from here */
 }
 
 @keyframes moveRocket {
   0% {
-    transform: translateX(0);
+    /* added the rotation here */
+    transform: rotate(90deg) translateX(0);
   }
   100% {
-    transform: translateX(100vw);
+    /* added the rotation here and increased translateX to 120vw */
+    transform: rotate(90deg) translateX(120vw);
   }
 }
