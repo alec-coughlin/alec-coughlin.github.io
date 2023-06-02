@@ -70,5 +70,19 @@ p {
 }
 
 .rocket {
-  transform: scale(0.5) rotate(90deg);
+  position: fixed;
+  bottom: -200px;
+  right: 20px;
+  height: 100px;
+  animation: moveRocket 5s linear infinite;
 }
+
+@keyframes moveRocket {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
