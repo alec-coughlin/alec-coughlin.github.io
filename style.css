@@ -5,6 +5,9 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDdkMjAwMWQ1ZTQ4YWI1ZThmN2E5OTQ4ZDM2MmZhZWQ4NjM0NDc0MiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xUA7bfDro97ipc4fu0/giphy.gif');
+  background-repeat: repeat-y;
+  background-attachment: fixed;
 }
 
 header {
