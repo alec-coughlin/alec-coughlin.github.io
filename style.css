@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Press Start 2P', cursive; 
+  color: #00FF00;
   height: 100vh;
   background: url('ezgif.com-gif-maker.gif') no-repeat center center fixed; 
   -webkit-background-size: auto;
@@ -14,41 +17,27 @@ body {
   background-repeat: repeat;
 }
 
-
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-h1 {
+.name {
   font-size: 36px;
   margin: 0;
+  color: inherit; 
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
+  display: flex; /* make the list items display in a row */
+  justify-content: space-around; /* evenly distribute the space around the list items */
+  margin-bottom: 20px; /* provide some space below the navigation bar */
 }
 
 nav ul li a {
-  color: #fff;
+  color: #00FF00; /* color of the links */
   text-decoration: none;
 }
 
@@ -56,7 +45,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-main {
+.main {
   padding: 20px;
 }
 
