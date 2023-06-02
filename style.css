@@ -71,18 +71,18 @@ p {
 
 .rocket {
   position: fixed;
-  bottom: -200px;
-  right: 20px;
+  left: -200px; /* move rocket offscreen to the left initially */
+  bottom: 20px; /* adjust this as needed */
   height: 100px;
   animation: moveRocket 5s linear infinite;
+  transform: rotate(90deg); /* adjust rotation as needed */
 }
 
 @keyframes moveRocket {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   100% {
-    transform: translateY(-100vh);
+    transform: translateX(100vw);
   }
 }
-
